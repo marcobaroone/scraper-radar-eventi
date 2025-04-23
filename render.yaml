@@ -1,7 +1,7 @@
 services:
   - type: cron
     name: scraper-eventiesagre
-    schedule: "daily"
+    schedule: "0 10 * * *"
     runtime: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python scraper_eventiesagre.py"
